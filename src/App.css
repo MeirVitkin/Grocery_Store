@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 1400px;
+  height: 200px;
+  background-color: rgb(195, 247, 189);
+}
+
+.cartAndContentContainer {
+  display: flex;
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 400px;
+  height: 930px;
+  overflow-y:scroll;
+  background-color: rgb(151, 245, 157);
+}
+
+.cart{
+  width: 400px;
+  text-align: center;
+
+}
+
+.total {
+  width: 400px;
+  font-size: 45px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(2, 66, 26);
+  color: aliceblue;
+}
+
+
+.content {
+  width: 1000px;
+  max-height: 1000px;
+  background-color: rgb(139, 185, 141);
+  overflow-y: scroll;
+}
+
+.itemListHeader{
+  text-align: center;
+}
+
+.itemList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.addToCartButton{
+  width: 200px;
+  height: 30px;
+  font-size: 25px;
+  padding: 7px;
+  text-align: center;
+  background-color: rgb(54, 135, 59);
+  color: aliceblue;
+}
+
+.item {
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  background-color: rgb(80, 184, 70);
+  box-shadow: 5px 5px rgb(19, 61, 25) transparent ;
+}
+
+.itenAmount{
+  padding: 15px;
+}
