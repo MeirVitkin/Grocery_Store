@@ -3,7 +3,6 @@ import DataContext from "./Contex/DataContext";
 const CartItem = ({ item }) => {
     const { name, emoji, price, id } = item;
     const {cartItems, setCartItems } = useContext(DataContext)
-    console.log("CartItem");
     const handelPlus = () => {
         const NewCart = {...cartItems}
         if(cartItems[id]){
