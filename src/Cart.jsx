@@ -28,7 +28,7 @@ const Cart = () => {
 
   return (
     <div className='cart'>
-      <h3>🛒</h3>
+      <div className='itemsNumber'> {Object.keys(cartItems).length} <div className='cartEmoji'>🛒</div></div>
       {total > 0 && (
         <button onClick={handelDeleteAll  }>Delete all items</button>
       )}

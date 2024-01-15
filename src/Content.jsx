@@ -7,7 +7,7 @@ const Content = () => {
   const nav = useNavigate();
   return (
     <div>
-       <div onClick={()=>nav('/categories')}>🏡 home</div>
+       <h1 onClick={()=>nav('/categories')}>🏠 </h1>
       <Routes>
       <Route index element={<Navigate to='categories' />} />
         <Route path= '/categories' element= {<Categories/>}/>
