@@ -14,7 +14,6 @@ const Cart = () => {
   }, [cartItems])
   const totalPrice = () => {
     let totalPrice = 0;
-    if (Object.values(cartItems).length !== 0) {
 
       Object.values(cartItems).forEach(item => {
         let price = item.price;
@@ -22,16 +21,14 @@ const Cart = () => {
         totalPrice += sum;
       })
       setTotal(totalPrice.toFixed(2));
-    }
   }
   const handelDeleteAll = ()=>{
     setCartItems({})
-    setTotal(0)
   }
 
   return (
     <div className='cart'>
-      <h1>Cart</h1>
+      <h3>🛒</h3>
       {total > 0 && (
         <button onClick={handelDeleteAll  }>Delete all items</button>
       )}

@@ -26,13 +26,12 @@ const CartItem = ({ item }) => {
         }
      }
     return (
-        <div >
-            <h2>{name}</h2>
-            <h1>{emoji}</h1>
-            <span>{price}</span><br />
-            <button onClick={handelPlus}>+</button>
-            <span className="itenAmount">{cartItems[id]?.amount || 0}</span>
-            <button onClick={handelMinus}>-</button>
+        <div className="cartItemContainer" >
+            <h5>{name}</h5>
+            <div>{price}</div>
+            <div><button onClick={handelPlus}>+</button></div>
+            <div className="itenAmount">{cartItems[id]?.amount || 0}</div>
+            <div><button onClick={handelMinus}>-</button></div>
 
         </div>
     )
